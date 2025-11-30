@@ -1,0 +1,51 @@
+{
+  "experiment": "Enhanced SVM Benchmark",
+  "enhancements": {
+    "enhanced_features": false,
+    "data_augmentation": true,
+    "augmentation_factor": 3,
+    "feature_selection_linear": true,
+    "pca_rbf": true
+  },
+  "selected_model_for_test": "RBF SVM",
+  "selected_model_test_f1": 0.57704329004329,
+  "baseline_f1": 0.596,
+  "improvement": -0.01895670995670995,
+  "improvement_percent": -3.1806560330050258,
+  "linear_svm": {
+    "best_params": {
+      "clf__C": 0.001,
+      "feature_selection__k": 150
+    },
+    "cv_f1_mean": 0.6133787496951053,
+    "val_f1": 0.5197072001009655,
+    "test_f1": 0.6059646236116825,
+    "training_time_seconds": 91.2419946193695
+  },
+  "rbf_svm": {
+    "best_params": {
+      "clf__C": 20.0,
+      "clf__gamma": 0.003,
+      "pca__n_components": 125
+    },
+    "cv_f1_mean": 0.6147103472710216,
+    "val_f1": 0.6034079254079254,
+    "test_f1": 0.57704329004329,
+    "training_time_seconds": 91.2419946193695
+  },
+  "dataset_info": {
+    "n_classes": 5,
+    "classes": [
+      "angry",
+      "fearful",
+      "happy",
+      "neutral",
+      "sad"
+    ],
+    "feature_dim": 204,
+    "train_samples_original": 756,
+    "train_samples_augmented": 2268,
+    "val_samples": 72,
+    "test_samples": 36
+  }
+}

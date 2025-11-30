@@ -1,0 +1,78 @@
+{
+  "best_model": {
+    "name": "FeatureSelect(k=150) + LDA",
+    "val_f1": 0.5455238095238095,
+    "test_f1": 0.4623376623376624,
+    "improvement_over_baseline": 0.07366633366633374
+  },
+  "all_experiments": {
+    "Baseline LDA": {
+      "val_f1": 0.3935365709559258,
+      "test_f1": 0.38867132867132864
+    },
+    "PCA(50) + LDA": {
+      "val_f1": 0.5056842399468959,
+      "test_f1": 0.6131161387631976
+    },
+    "FeatureSelect(k=150) + LDA": {
+      "val_f1": 0.5455238095238095,
+      "test_f1": 0.4623376623376624
+    },
+    "Shrinkage LDA": {
+      "val_f1": 0.49420257162192643,
+      "test_f1": 0.44909090909090904
+    },
+    "Combined k=75,pca=30": {
+      "val_f1": 0.482063492063492,
+      "test_f1": 0.5924509803921569
+    },
+    "Grid Search Optimized": {
+      "val_f1": 0.42470631964063965,
+      "test_f1": 0.5394194041252864
+    },
+    "Bagging LDA": {
+      "val_f1": 0.4688804006451065,
+      "test_f1": 0.6834147812971343
+    },
+    "QDA": {
+      "val_f1": 0.40822926093514333,
+      "test_f1": 0.4475213675213675
+    }
+  },
+  "comparison_with_benchmarks": {
+    "linear_svm_test_f1": 0.581056721056721,
+    "rbf_svm_test_f1": 0.6334535464535465,
+    "best_lda_test_f1": 0.4623376623376624,
+    "lda_vs_linear_svm": -0.11871905871905863,
+    "lda_vs_rbf_svm": -0.17111588411588408,
+    "meets_minimum_target": false,
+    "matches_rbf_benchmark": false,
+    "exceeds_rbf_benchmark": false
+  },
+  "statistical_tests": {
+    "mcnemar_test": {
+      "vs_linear_svm": {
+        "statistic": 0.5714285714285714,
+        "p_value": 0.4496917979688908,
+        "significant": false
+      },
+      "vs_rbf_svm": {
+        "statistic": 1.4545454545454546,
+        "p_value": 0.22779999398822554,
+        "significant": false
+      }
+    },
+    "paired_t_test": {
+      "vs_linear_svm": {
+        "t_statistic": -1.7371935277402182,
+        "p_value": 0.15735339765635736,
+        "significant": false
+      },
+      "vs_rbf_svm": {
+        "t_statistic": -2.5829821880113384,
+        "p_value": 0.06113470536557935,
+        "significant": false
+      }
+    }
+  }
+}

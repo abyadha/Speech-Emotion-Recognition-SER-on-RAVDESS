@@ -1,0 +1,29 @@
+{
+  "benchmark_test_f1": 0.6334535464535465,
+  "benchmark_model": "RBF SVM",
+  "linear_svm": {
+    "params": {
+      "clf__C": 0.001,
+      "feature_selection__k": "all"
+    },
+    "cv_f1": 0.6077093172757172,
+    "val_f1": 0.556368356702152,
+    "test_f1": 0.581056721056721
+  },
+  "rbf_svm": {
+    "params": {
+      "clf__C": 10.0,
+      "clf__gamma": 0.003,
+      "pca__n_components": 125
+    },
+    "cv_f1": 0.6000883625977413,
+    "val_f1": 0.5693675213675213,
+    "test_f1": 0.6334535464535465
+  },
+  "dataset": {
+    "features": 204,
+    "train_samples": 1512,
+    "val_samples": 72,
+    "test_samples": 36
+  }
+}

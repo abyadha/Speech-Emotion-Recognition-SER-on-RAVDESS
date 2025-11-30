@@ -1,0 +1,86 @@
+{
+  "lda_performance": {
+    "val_f1": 0.3935365709559258,
+    "test_f1": 0.38867132867132864,
+    "test_accuracy": 0.4166666666666667,
+    "per_class_f1": {
+      "angry": 0.6666666666666666,
+      "fearful": 0.5,
+      "happy": 0.18181818181818182,
+      "neutral": 0.46153846153846156,
+      "sad": 0.13333333333333333
+    }
+  },
+  "statistical_tests": {
+    "mcnemar_test": {
+      "lda_vs_linear_svm": {
+        "statistic": 2.5,
+        "p_value": 0.11384629800665763,
+        "significant_at_0.05": false,
+        "contingency_table": [
+          [
+            13,
+            8
+          ],
+          [
+            2,
+            13
+          ]
+        ]
+      },
+      "lda_vs_rbf_svm": {
+        "statistic": 3.5,
+        "p_value": 0.0613688291394023,
+        "significant_at_0.05": false,
+        "contingency_table": [
+          [
+            10,
+            11
+          ],
+          [
+            3,
+            12
+          ]
+        ]
+      }
+    },
+    "paired_t_test": {
+      "lda_vs_linear_svm": {
+        "t_statistic": -3.089414416007609,
+        "p_value": 0.0365951376035502,
+        "significant_at_0.05": true,
+        "mean_difference": -0.19238539238539237,
+        "per_emotion_differences": [
+          -0.033333333333333326,
+          -0.11538461538461542,
+          -0.3636363636363636,
+          -0.1384615384615384,
+          -0.3111111111111111
+        ]
+      },
+      "lda_vs_rbf_svm": {
+        "t_statistic": -3.788898766000831,
+        "p_value": 0.0192871757820672,
+        "significant_at_0.05": true,
+        "mean_difference": -0.2447822177822178,
+        "per_emotion_differences": [
+          -0.20833333333333337,
+          -0.11538461538461542,
+          -0.3636363636363636,
+          -0.10989010989010983,
+          -0.42666666666666675
+        ]
+      }
+    }
+  },
+  "comparison_with_benchmarks": {
+    "linear_svm_test_f1": 0.581056721056721,
+    "rbf_svm_test_f1": 0.6334535464535465,
+    "lda_test_f1": 0.38867132867132864,
+    "lda_improvement_over_linear": -0.19238539238539237,
+    "lda_vs_rbf": -0.24478221778221781,
+    "meets_minimum_target": false,
+    "matches_rbf_benchmark": false,
+    "exceeds_rbf_benchmark": false
+  }
+}

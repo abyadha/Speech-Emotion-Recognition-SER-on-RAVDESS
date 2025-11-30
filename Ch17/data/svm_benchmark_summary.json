@@ -1,0 +1,35 @@
+{
+  "selected_model_for_test": "RBF SVM",
+  "selected_model_test_f1": 0.5963564213564213,
+  "linear_svm": {
+    "best_params": {
+      "clf__C": 0.01
+    },
+    "cv_f1_mean": 0.5931419749682589,
+    "val_f1": 0.5395413025497178,
+    "test_f1": 0.48409090909090907
+  },
+  "rbf_svm": {
+    "best_params": {
+      "clf__C": 10.0,
+      "clf__gamma": 0.001
+    },
+    "cv_f1_mean": 0.5864017508390186,
+    "val_f1": 0.5595301250473664,
+    "test_f1": 0.5963564213564213
+  },
+  "dataset_info": {
+    "n_classes": 5,
+    "classes": [
+      "angry",
+      "fearful",
+      "happy",
+      "neutral",
+      "sad"
+    ],
+    "feature_dim": 204,
+    "train_samples": 756,
+    "val_samples": 72,
+    "test_samples": 36
+  }
+}
